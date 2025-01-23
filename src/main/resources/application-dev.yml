@@ -1,0 +1,47 @@
+#=============================================
+#   SERVER CONFIG
+#=============================================
+server:
+  port: 80
+  tomcat:
+    threads:
+      max: 10
+      max-queue-capacity: 50
+      min-spare: 5
+#=============================================
+#   SPRING CONFIG
+#=============================================
+spring:
+  config:
+    activate:
+      on-profile: dev
+  #=============================================
+  #   DATABASE CONFIG
+  #=============================================
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/chatbot?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+  task:
+    execution:
+      pool:
+        core-size: 5
+        max-size: 20
+        queue-capacity: 100
+        keep-alive: 30s
+  jersey:
+    servlet:
+      load-on-startup: 1
+logging:
+  file:
+    name: logs/application.log
