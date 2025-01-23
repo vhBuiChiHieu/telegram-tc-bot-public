@@ -82,7 +82,15 @@ Bot được thiết kế để hỗ trợ người dùng quản lý tài chính
         BOT_USERNAME=vhbchieu_tc_bot
         ```
 
-5.  **Chạy ứng dụng:**
+5.  **Mở rộng thêm tính năng:**
+
+    ```
+    Chỉ cần tạo 1 class mới implements [CommandHandler]
+    Xử lý logic trong handle(Update)
+    Phần còn lại Spring sẽ giúp bạn.
+    ```
+
+6.  **Chạy ứng dụng:**
 
     *   Chạy [Ngrok]() nếu dùng.
     *   Chạy backend python:
