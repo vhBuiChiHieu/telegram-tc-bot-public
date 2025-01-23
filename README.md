@@ -21,6 +21,8 @@ Bot được thiết kế để hỗ trợ người dùng quản lý tài chính
 
 *   Bạn có thể thử trải nghiệm trước tại [@vhbchieu_tc_bot](https://t.me/vhbchieu_tc_bot)
 
+![Demo Img](./imgs/1.png)
+
 ## Hướng dẫn tự cài đặt
 
 ### chuẩn bị
